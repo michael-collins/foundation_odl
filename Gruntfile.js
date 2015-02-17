@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   var theme_name = 'foundation_odl';
-  var base_theme_path = '../zurb_foundation';
+  var base_theme_path = '../zurb-foundation';
 
   var global_vars = {
     theme_name: theme_name,
