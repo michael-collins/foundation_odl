@@ -84,6 +84,32 @@ module.exports = function(grunt) {
       }
     },
 
+    svgmin: {
+      dist: {
+          files: [{
+              expand: true,
+              cwd: 'images/svg/svgs',
+              src: ['*.svg'],
+              dest: 'svg/source'
+          }]
+      }
+    },
+
+    grunticon: {
+      myIcons: {
+          files: [{
+              expand: true,
+              cwd: 'images/svg/input',
+              src: ['*.svg', '*.png'],
+              dest: "images/svg/output"
+          }],
+          options: {
+            enhanceSVG: true,
+            dynamicColorOnly: true
+        }
+      }
+    },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
@@ -105,7 +131,9 @@ module.exports = function(grunt) {
       }
     }
   });
+  grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-grunticon');
 
-  grunt.registerTask('build', ['jshint','uglify','sass']);
+  grunt.registerTask('build', ['jshint','uglify','svgmin','grunticon:myIcons','sass']);
   grunt.registerTask('default', ['build', 'watch']);
 };
