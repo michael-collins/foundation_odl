@@ -92,9 +92,8 @@
 // Fix for some Drupal CSS quirks (Drupalisms).
 @import "base/drupal";
 
-// Styling for elements.
-// Optional.
-// @import "base/elements";
+// Fonts
+@import "base/fonts";
 
 // Layout
 // Each section of the document has it's own partial seperated out to improve

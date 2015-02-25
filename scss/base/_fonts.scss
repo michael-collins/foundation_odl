@@ -1,0 +1,55 @@
+// To Do: Add backup font classes al la Jason Pamental's technique
+
+//Share Tech Mono Google Font
+%sharetechmono-normal {
+	 font-family: "Share Tech Mono", "Lucida Console", "Monaco", monospace;
+	 font-style: normal;
+	 font-weight: 300;
+}
+//Oswald Google Font
+%oswald-light {
+	 font-family: "Oswald", "Impact", "Tahoma", sans-serif;
+	 font-style: normal;
+	 font-weight: 300;
+}
+%oswald-normal {
+	 font-family: "Oswald", "Helvetica Neue", "Helvetica", sans-serif;
+	 font-style: normal;
+	 font-weight: 400;
+}
+//Open Sans Google Font
+%opensans-light {
+	 font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+	 font-style: normal;
+	 font-weight: 300;
+}
+%opensans-normal {
+	 font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+	 font-style: normal;
+	 font-weight: 600;
+}
+%opensans-bold {
+	 font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+	 font-style: normal;
+	 font-weight: 700;
+}
+
+// Applied fonts
+
+body {
+	 @extend %opensans-normal;
+}
+
+h1 {
+	 @extend %oswald-normal;
+}
+
+h2 {
+	 @extend %oswald-light;
+}
+a {
+	@extend %opensans-normal;
+}
+p {
+	@extend %opensans-normal;
+}
