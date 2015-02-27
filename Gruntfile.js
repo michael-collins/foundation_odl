@@ -90,7 +90,7 @@ module.exports = function(grunt) {
               expand: true,
               cwd: 'images/svg/svgs',
               src: ['*.svg'],
-              dest: 'svg/source'
+              dest: 'images/svg/source'
           }]
       }
     },
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
       myIcons: {
           files: [{
               expand: true,
-              cwd: 'images/svg/input',
+              cwd: 'images/svg/source',
               src: ['*.svg', '*.png'],
               dest: "images/svg/output"
           }],

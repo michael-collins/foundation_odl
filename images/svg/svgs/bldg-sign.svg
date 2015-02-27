@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="360px" height="340px" viewBox="0 0 360 340" enable-background="new 0 0 360 340" xml:space="preserve">
+<polygon fill="#ECECEC" points="326,96 326,77.269 187.189,47.047 53,77.269 53,96 "/>
+<path fill="#808080" d="M53,96v95.505c8-0.653,273,0,273,0V96H53z"/>
+<path fill="#808080" d="M53,196v96.047c8-0.653,273,0,273,0V196H53z"/>
+<path fill="#638DD2" d="M176.601,61H201v11.087c0,0-1.245,11.27-12.199,13.097c0,0-10.096-2.828-12.317-13.055L176.601,61z"/>
+<rect x="71.177" y="111.031" fill="none" width="229.976" height="72.807"/>
+<text transform="matrix(1 0 0 1 97.8418 134.2961)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'PerpetuaTitlingMT-Light'" font-size="32.3585">RITENOUR </tspan><tspan x="6.747" y="38.83" fill="#FFFFFF" font-family="'PerpetuaTitlingMT-Light'" font-size="32.3585">BUILDING</tspan></text>
+<g>
+	<rect x="96.074" y="213.183" fill="none" width="188.323" height="67.307"/>
+	<text transform="matrix(1 0 0 1 103.386 231.2854)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'SourceSansPro-Regular'" font-size="25.4245">Office of Digital </tspan><tspan x="2.568" y="30.51" fill="#FFFFFF" font-family="'SourceSansPro-Regular'" font-size="25.4245">Learning (ODL)</tspan></text>
+</g>
+<rect x="53" y="190" fill="#666666" width="273" height="6"/>
+<path opacity="0.5" fill="#939393" d="M74.319,72.664L53,77.094V292h273v-88.939C326,203.061,173.706,164.924,74.319,72.664z"/>
+</svg>

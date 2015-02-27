@@ -58,7 +58,7 @@ scripts[] = js/app.min.js
 ;   regions[header] = Header
 ; You'll use this variable in page.tpl.php:
 ;   <?php print render($page['header']); ?>
-
+regions[header_bg_region]	 = Header Background
 regions[topbar_section_1]	 = Top Bar Section 1
 regions[topbar_section_2]    = Top Bar Section 2
 regions[header]              = Header

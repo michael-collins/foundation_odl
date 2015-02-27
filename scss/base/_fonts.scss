@@ -53,3 +53,16 @@ a {
 p {
 	@extend %opensans-normal;
 }
+.top-bar-section ul li>a {
+	@extend %opensans-normal;
+}
+.top-bar .name h1 a {
+	@extend %oswald-normal;
+}
+h1#page-title {
+	text-transform:uppercase;
+}
+.header h1#page-title {
+	@extend %sharetechmono-normal;
+	text-transform:lowercase;
+}

@@ -56,3 +56,24 @@
 // }
 
 // select {}
+
+// ODL Top Bar Lettering
+//-----------------------------------------------------------------------------
+.center-middle-flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-align-content: center;
+	-moz-align-content: center;
+	-ms-align-content: center;
+  	align-content: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+  	justify-content: center;
+  }

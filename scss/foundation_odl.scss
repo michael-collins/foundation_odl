@@ -38,6 +38,11 @@
 // Comment out this import if you don't want to use normalize.
 @import "normalize";
 
+//Settings
+@import "base/colors";
+@import "base/settings";
+@import "../images/svg/output/icon.data.svg.css";
+
 // Comment out the imports you don't need below.
 @import "foundation/components/grid";
 @import "foundation/components/accordion";
@@ -82,7 +87,7 @@
 
 // Import our mixins early so they can be used by other partials.
 // Optional.
-//@import "base/mixins";
+@import "base/mixins";
 
 // Common file is where you place common utility classes to extend or
 // parametrics.
@@ -95,16 +100,19 @@
 // Fonts
 @import "base/fonts";
 
+
 // Layout
 // Each section of the document has it's own partial seperated out to improve
 // developer experience. Additionally, grids can be declared in layouts as well.
-@import "layout/header";
+
 @import "layout/main";
 @import "layout/aside";
 @import "layout/footer";
+@import "layout/user-menu";
+@import "base/elements";
 
-// Modules
-// @import "modules/block";
+@import "modules/topbar";
+@import "layout/header";
 // @import "modules/button";
 
 // States

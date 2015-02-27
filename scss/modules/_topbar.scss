@@ -1,0 +1,55 @@
+.top-bar {
+	background: rgba($top-bar-base-color, 0.2);
+	
+	&-most {	
+		background-color: rgba($top-bar-base-color, 0.5);
+		.row {
+			max-width:none;
+		}
+	}
+
+	@media #{$medium-up} {
+		padding:1em;
+		height:auto;
+	
+		.name.odl-lettering {
+			border-radius: 50%;
+			width: 4rem;
+			height: 4rem; 
+			background-color:$odl-lettering-bg-color;
+			color:$odl-lettering-text-color;
+			padding:0;
+			margin:0;
+
+			h1 {
+				display:inline-block;
+				margin:0;
+				padding:0;
+			
+				a {
+					display:inline-block;
+					margin:0;
+					padding:0;
+					color:black;
+				}
+			}
+		}
+	}
+}
+
+@media #{$medium-up} {
+	.top-bar-section ul li {
+		background: transparent;
+		padding:0.59375rem 0;
+		
+		&:not(.has-form) a:not(.button) {
+			background: transparent;
+			
+			&:hover, &.active {
+				@include border-radius(3px);
+				background-color: $white;
+				color:$top-bar-primary-contrast-color;
+			}
+		}
+	}
+}
