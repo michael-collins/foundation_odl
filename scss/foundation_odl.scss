@@ -43,6 +43,9 @@
 @import "base/settings";
 @import "../images/svg/output/icon.data.svg.css";
 
+//fonts
+@import "../fonts/foundation-icons/foundation-icons.css";
+
 // Comment out the imports you don't need below.
 @import "foundation/components/grid";
 @import "foundation/components/accordion";
@@ -109,10 +112,14 @@
 @import "layout/aside";
 @import "layout/footer";
 @import "layout/user-menu";
-@import "base/elements";
+
 
 @import "modules/topbar";
 @import "layout/header";
+@import "base/elements";
+
+@import "modules/menu_social";
+
 // @import "modules/button";
 
 // States

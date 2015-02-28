@@ -1,18 +1,36 @@
 // Non-modular or client styles for .l-header region.
+
+.not-front.node-type-page {
+	.header {
+		h1#page-title {
+			@media #{$medium-up} {
+				width:50%;
+			}
+		}
+	}
+}
 .header {
 	h1#page-title {
 		color: $header-page-title-color;
 		@media #{$small-up} {
-			margin-top:2rem;
+			margin-top: 9.25rem;
+			margin-bottom: 1.75rem;
+			margin-left: 0;
 			font-size: 2.75rem;
+			text-align: center;
+			
 		}
 		@media #{$medium-up} {
 			margin-top:5rem;
+			margin-bottom:5rem;
+			margin-left: 1.25rem;
 			font-size: 4rem;
+			text-align: left;
 		}
 		@media #{$large-up} {
-			margin-top:6rem;
-			font-size: 6rem;
+			margin-top:7rem;
+			margin-bottom:7rem;
+			font-size: 4rem;
 		}
 
 	}
@@ -52,7 +70,7 @@
 }
 
 // Header Background Images
-$process-page-contrast-color:#E2801E;// Process Page
+// Process Page
 // body.section-process
 // .l-header {
 // 	background-color:$process-page-contrast-color;
@@ -72,6 +90,7 @@ $process-page-contrast-color:#E2801E;// Process Page
 // 		}
 // 	}
 // }
+
 .block-views-page-header-image-block {
 	position: absolute;
 	height: 100%;
@@ -80,13 +99,42 @@ $process-page-contrast-color:#E2801E;// Process Page
 	width: 100%;
 }
 .header-bg {
-	height: 100%;
 	z-index: 1;
-	background: #E2801E;
 	position: absolute;
-	background-position: 80% 160%;
+	height: 100%;
 	width: 100%;
-	background-size: contain;
 	background-attachment: fixed;
-	background-color:$process-page-contrast-color;
+	background-color:$science-orange;
+	
+	@media #{$small-up} {
+		background-size: 9rem 9rem;
+		background-position: center 115px;
+	}
+	@media #{$medium-up} {
+		background-size: 17rem 15rem;
+		background-position: 95% 160px;
+	}
+	@media #{$large-up} {
+		background-size: 20rem 17rem;
+		background-position: 95% 180px;
+	}
+	@media #{$xlarge-up} {
+		background-size: 20rem 17rem;
+		background-position: 75% 180px;
+	}
+	
 }
+.not-front {
+	.header-bg {
+		@media (min-height: 800px) {
+			height: 70%;
+		}
+		@media (min-height: 1000px) {
+			height: 50%;
+		}
+	}
+}
+ // Blog Header (It's so annoying)
+ .page-blog {
+ 	background-color:$science-orange;
+ }

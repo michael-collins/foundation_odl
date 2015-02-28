@@ -105,7 +105,10 @@ module.exports = function(grunt) {
           }],
           options: {
             enhanceSVG: true,
-            dynamicColorOnly: true
+            dynamicColorOnly: false,
+            colors: {
+              white: "#fff"
+            }
         }
       }
     },

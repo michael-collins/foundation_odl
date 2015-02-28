@@ -47,11 +47,14 @@ h1 {
 h2 {
 	 @extend %oswald-light;
 }
+h3 {
+	 @extend %opensans-light;
+}
 a {
 	@extend %opensans-normal;
 }
 p {
-	@extend %opensans-normal;
+	@extend %opensans-light;
 }
 .top-bar-section ul li>a {
 	@extend %opensans-normal;

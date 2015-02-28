@@ -1,5 +1,5 @@
 // Non-modular or client styles for .l-footer region.
-@include sticky-footer(6rem, '.page', '.inner-wrapper-calc', '.l-footer');
+@include sticky-footer(20rem, '.page', '.inner-wrapper-calc', '.l-footer');
 
 footer {
 	&.panel {
