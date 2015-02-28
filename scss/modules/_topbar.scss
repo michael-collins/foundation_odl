@@ -1,14 +1,26 @@
-.top-bar {
+.l-header .contain-to-grid {
 	background: rgba($top-bar-base-color, 0.2);
+}
+.top-bar {
+	background-color:transparent;
 	
 	&-most {	
 		//background-color: rgba($top-bar-base-color, 0.5);
 		.row {
 			max-width:none;
-			height:2.75rem;
+			height: 4.5rem;
 		}
 	}
+	@media #{$small-only} {
+		text-align:center;
 
+		.name.odl-lettering {
+			h1 {
+				text-align: center;
+				color:$white;
+			}
+		}
+	}
 	@media #{$medium-up} {
 		padding:1em;
 		height:auto;
@@ -33,6 +45,11 @@
 				}
 			}
 		}
+		h3.site-slogan {
+			color: $white;
+			width: 8rem;
+			margin: 0 0 0 1rem;
+		}
 	}
 }
 
@@ -51,4 +68,12 @@
 			}
 		}
 	}
+}
+.pennstate-logo {
+	float: left;
+	display: block;
+	height: 1rem;
+	width: 8rem;
+	margin: 0.5rem 0 0 0;
+	@include opacity(0.8);
 }

@@ -90,9 +90,11 @@
 // 		}
 // 	}
 // }
-
+.call-to-action {
+	margin:3rem 0;
+}
 .block-views-page-header-image-block {
-	position: absolute;
+	position: fixed;
 	height: 100%;
 	z-index: -1;
 	top: 0;
@@ -123,6 +125,11 @@
 		background-position: 75% 180px;
 	}
 	
+}
+.front {
+	.header-bg {
+		height:100%;
+	}
 }
 .not-front {
 	.header-bg {

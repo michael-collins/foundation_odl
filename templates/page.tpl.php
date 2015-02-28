@@ -6,12 +6,14 @@
 
      <div class="top-bar-most">
        <div class="row">
-        <div class="small-6 columns">
+        <div class="small-12 medium-6 columns">
+          <li class="pennstate-logo"><a href="http://www.psu.edu"><img alt="psu logo" src="<?php print $GLOBALS['base_url'] . '/' . $GLOBALS['theme_path'];?><?php echo '/images/pennstate/psu-rev.svg'; ?>"/></a></li>
+
           <?php if (!empty($page['topbar_section_1'])): ?>
             <?php print render($page['topbar_section_1']); ?>
           <?php endif; ?>
         </div>
-        <div class="small-6 columns">
+        <div class="medium-6 hide-for-small-only columns">
           <?php if (!empty($page['topbar_section_2'])): ?>
             <?php print render($page['topbar_section_2']); ?>
           <?php endif; ?>
@@ -25,9 +27,11 @@
       <?php endif; ?>
       <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
         <ul class="title-area">
-          <li class="name odl-lettering center-middle-flex"><h1><?php print $linked_site_name; ?></h1></li>
+          <li class="name odl-lettering show-for-small-only"><?php if ($site_slogan): ?><h1 title="<?php print $site_slogan; ?>" class="site-slogan"><?php print $site_slogan; ?></h1><?php endif; ?></li>
+          <div class="left hide-for-small-only"><li class="name odl-lettering center-middle-flex"><h1><?php print $linked_site_name; ?></h1></li></div>
+          <div class="left hide-for-small-only"><li><?php if ($site_slogan): ?><h3 title="<?php print $site_slogan; ?>" class="site-slogan"><?php print $site_slogan; ?></h3><?php endif; ?></li></div>
           <li class="toggle-topbar menu-icon">
-            <a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
+            <a href="#"><span><!-- <?php print $top_bar_menu_text; ?> --></span></a></li>
         </ul>
 
         <!-- <?php if (!empty($page['topbar_section_2'])): ?>
