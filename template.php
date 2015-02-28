@@ -41,9 +41,3 @@ function foundation_odl_links__topbar_main_menu($variables) {
 
   return '<ul' . drupal_attributes($variables['attributes']) . '>' . $output . '</ul>';
 }
-
-function foundation_odl_hook_preprocess_page(&$variables) {
-        if (arg(0) == 'node') {
-                $variables['node_content'] =& $variables['page']['content']['system_main']['nodes'][arg(1)];
-        }
-}

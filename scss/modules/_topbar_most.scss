@@ -1,0 +1,37 @@
+//Settings for .top-bar-most
+$top-bar-most-height:4.5rem;
+$top-bar-most-margin:0.25rem;
+
+.top-bar-most {	
+	.row {
+		max-width:none;
+		height: $top-bar-most-height;
+		margin: $top-bar-most-margin 0;
+	}
+}
+
+// Social Menu Block 
+.block-menu-block-3 {
+	float:left;
+}
+.social-menu-block-item {
+	$icon-size:1.5rem;
+	height: $icon-size;
+	width: $icon-size;
+	margin: 0.5 * $top-bar-most-height - $icon-size 0.25rem;
+	color: #fff;
+	overflow: hidden;
+	font-size: $icon-size;
+	line-height: $icon-size;
+	display: block;
+}
+.menu-name-menu-social-menu {
+	margin-left:1rem;
+	ul.menu {
+		margin-bottom: 0.75rem;
+		margin-top: 0.75rem;
+		li {
+			list-style:none;
+		}
+	}
+}

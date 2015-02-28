@@ -56,9 +56,7 @@ a {
 p {
 	@extend %opensans-light;
 }
-.top-bar-section ul li>a {
-	@extend %opensans-normal;
-}
+
 .top-bar .name h1 a {
 	@extend %oswald-normal;
 }
@@ -75,4 +73,8 @@ h1#page-title {
 h3.site-slogan {
 	font-size: 1rem;
 	text-transform: uppercase;
+}
+.top-bar-section ul li>a {
+	@extend %opensans-light;
+	font-size: 1rem;
 }

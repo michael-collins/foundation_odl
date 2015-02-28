@@ -127,3 +127,40 @@
  
 // usage if you want to define the element ids
 //@include sticky-footer(30px, '#page', '#main', '#colophon');
+
+// Vertical/Horizontal Menu Mixin
+// Originally derived from http://sachagreif.com/useful-sass-mixins/
+ 
+@mixin navigation-list ($menu-horizontal:false) { // Vertical menu default
+  ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    display: inline-block;
+   
+    > li {
+        display:block;
+        @if $menu-horizontal { float:left;};
+        &:last-child {
+          margin-right:0px;
+        }
+        a {
+          display:block;
+        }
+    }
+  } 
+}
+ 
+//////
+// place in a SASS partial, ie - _style.scss
+//////
+ 
+// Default vertical menu
+.vertical-menu {
+  @include navigation-list();
+}
+// Horizontal menu
+.horizontal-menu {
+  @include navigation-list($menu-horizontal:true);
+}
