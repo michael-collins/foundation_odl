@@ -1,12 +1,16 @@
 //Settings for .top-bar-most
-$top-bar-most-height:4.5rem;
+$top-bar-most-height:4.5rem; // Change this variable to change the height of the header
 $top-bar-most-margin:0.25rem;
 
 .top-bar-most {	
 	.row {
 		max-width:none;
-		height: $top-bar-most-height;
+		// height: $top-bar-most-height;
 		margin: $top-bar-most-margin 0;
+
+		div {
+			height:inherit;
+		}
 	}
 }
 
@@ -16,9 +20,11 @@ $top-bar-most-margin:0.25rem;
 }
 .social-menu-block-item {
 	$icon-size:1.5rem;
+	$icon-margin-calc-combined:$top-bar-most-height - $icon-size;
+	$icon-margin:$icon-margin-calc-combined * 0.5;
 	height: $icon-size;
 	width: $icon-size;
-	margin: 0.5 * $top-bar-most-height - $icon-size 0.25rem;
+	margin: $icon-margin 0.25rem;
 	color: #fff;
 	overflow: hidden;
 	font-size: $icon-size;
@@ -28,10 +34,22 @@ $top-bar-most-margin:0.25rem;
 .menu-name-menu-social-menu {
 	margin-left:1rem;
 	ul.menu {
-		margin-bottom: 0.75rem;
-		margin-top: 0.75rem;
+		//margin-top: 0.75rem;
 		li {
 			list-style:none;
 		}
 	}
+}
+// Automagical Logo Sizing
+.pennstate-logo {
+	$logo-height:$top-bar-most-height - 0.5rem;
+	$logo-width:$logo-height * 2.5; //The logo file width is 2.5x the height
+	$logo-margin-calc-combined:$top-bar-most-height - $logo-height;
+	$logo-margin:$logo-margin-calc-combined * 0.5;
+	float: left;
+	display: block;
+	height: $logo-height;
+	width: $logo-width;
+	margin: $logo-margin 0;
+	@include opacity(0.8);
 }

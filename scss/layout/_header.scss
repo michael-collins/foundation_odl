@@ -9,6 +9,19 @@
 		}
 	}
 }
+body.node-type-blog-post {
+	.header-bg {
+	background-position: center;
+	background-size: 177.1rem;
+	background-color: #292827;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEyMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYycgd2lkdGg9JzYwJyBoZWlnaHQ9JzEyMCcgeD0nMCcgeT0nMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJCQk8cGF0aCBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nI2ZmZmZmZicgc3Ryb2tlLXdpZHRoPScuMDcnIGQ9J00tMiwxTDcsMTBNLTIsNkw3LDE1TS0yLC00TDcsNScvPgoJCTwvcGF0dGVybj4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYzInIHdpZHRoPSc2MCcgaGVpZ2h0PScxMjAnIHg9JzEwMCUnIHk9JzAnIHZpZXdCb3g9JzAgMCA1IDEwJz4KCQkJPHBhdGggZmlsbC1vcGFjaXR5PScwJyBzdHJva2U9JyNmZmZmZmYnIHN0cm9rZS13aWR0aD0nLjA3JyBkPSdNNywxTC0yLDEwTTcsNkwtMiwxNU03LC00TC0yLDUnLz4KCQk8L3BhdHRlcm4+Cgk8L2RlZnM+Cgk8cmVjdCB3aWR0aD0nNTAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYyknLz4KCTxyZWN0IHg9JzUwJScgd2lkdGg9JzUwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2MyKScvPgo8L3N2Zz4=');
+	}
+	h1#page-title {
+
+		@media #{$small-only} {
+			margin-top:1.25rem;
+		}
+	}
+}
 .header {
 	h1#page-title {
 		color: $header-page-title-color;
@@ -18,6 +31,7 @@
 			margin-left: 0;
 			font-size: 2.75rem;
 			text-align: center;
+			line-height: 2.25rem
 			
 		}
 		@media #{$medium-up} {
@@ -26,12 +40,14 @@
 			margin-left: 1.25rem;
 			font-size: 4rem;
 			text-align: left;
+			line-height: 3.25rem;
+			width: 70%;
 		}
 		@media #{$large-up} {
 			margin-top:7rem;
 			margin-bottom:7rem;
-			font-size: 4rem;
 		}
+		
 
 	}
 	h2.call-to-action {
@@ -108,21 +124,28 @@
 	background-attachment: fixed;
 	background-color:$science-orange;
 	
+	&.img-bg {
+		z-index: -1;
+		img {
+			position: fixed;
+			top: 0;
+		}
+	}
 	@media #{$small-up} {
 		background-size: 9rem 9rem;
-		background-position: center 115px;
+		background-position: center 135px;
 	}
 	@media #{$medium-up} {
 		background-size: 17rem 15rem;
-		background-position: 95% 160px;
+		background-position: 95% 180px;
 	}
 	@media #{$large-up} {
 		background-size: 20rem 17rem;
-		background-position: 95% 180px;
+		background-position: 95% 200px;
 	}
 	@media #{$xlarge-up} {
 		background-size: 20rem 17rem;
-		background-position: 75% 180px;
+		background-position: 75% 200px;
 	}
 	
 }
@@ -145,3 +168,5 @@
  .page-blog {
  	background-color:$science-orange;
  }
+
+
