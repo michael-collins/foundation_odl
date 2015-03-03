@@ -60,10 +60,10 @@ p {
 .top-bar .name h1 a {
 	@extend %oswald-normal;
 }
-h1#page-title {
+h1.title {
 	text-transform:uppercase;
 }
-.header h1#page-title {
+.l-header h1.title {
 	@extend %sharetechmono-normal;
 	text-transform:lowercase;
 }
@@ -77,4 +77,32 @@ h3.site-slogan {
 .top-bar-section ul li>a {
 	@extend %opensans-light;
 	font-size: 1rem;
+}
+
+.post {
+	&-title {
+		text-transform:uppercase;
+	}
+	&-date {
+		@extend %opensans-light;
+	}
+	&-author {
+		@extend %opensans-light;
+	}
+	&-tags {
+		@extend %opensans-light;
+		text-transform:uppercase;
+	}
+}
+.blog-list {
+	&-proj-auth {
+		@extend %opensans-light;
+	}
+	&-title {
+		text-transform:uppercase;
+	}
+}
+
+h2.block-title {
+	text-transform:uppercase;
 }
