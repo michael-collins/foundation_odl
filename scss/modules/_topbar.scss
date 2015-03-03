@@ -61,11 +61,27 @@
 		
 		&:not(.has-form) a:not(.button) {
 			background: transparent;
-			
-			&:hover, &.active {
-				@include border-radius(3px);
+			border-width: 2px;
+			border-style: solid;
+			border-color: rgba(255,255,255,0);
+			&:hover{
+				@include border-radius(0.5rem);
+				//background-color: $white;
+				color:$odl-lettering-text-color;
+				border-width: 2px;
+				border-style: solid;
+				border-color: rgba(255,255,255,0);
 				background-color: $white;
-				color:$top-bar-primary-contrast-color;
+				&.active {
+					color:$odl-lettering-text-color;
+				}
+			}
+			&.active {
+				@include border-radius(0.5rem);
+				color:$white;
+				border-width: 2px;
+				border-style: solid;
+				border-color: $topbar-link-border-color;
 			}
 		}
 	}

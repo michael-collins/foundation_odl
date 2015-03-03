@@ -106,3 +106,6 @@ h3.site-slogan {
 h2.block-title {
 	text-transform:uppercase;
 }
+#edit-textfield {
+	@extend %opensans-light;
+}
