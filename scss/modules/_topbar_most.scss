@@ -66,26 +66,27 @@ $top-bar-most-margin:0.25rem;
 		font-size:0.75rem;
 	}
 	#psu-search-form {
-		padding: 0;
+		padding:1rem 0;
 		position: initial;
 		display: block;
 		overflow: hidden;
 		max-width: none;
-		margin:1rem 0;
+		margin:0;
 
 		.form-text {
 			margin:0;
 		}
 		.form-type-radios {
 			padding: 0rem 1.8rem;
-			top: 2.5rem;
+			top: 3.5rem;
 			position: absolute;
-			right: 0;
+			right: 1rem;
 			width: 25rem;
 			z-index: 20;
+			margin:0;
 			background-color:$psu-search-radios-bg-color;
 			@include radius(0.5rem);
-
+			
 			label {
 				color:$white;
 				@include opacity(0.9);
@@ -96,6 +97,7 @@ $top-bar-most-margin:0.25rem;
 			border-color: $psu-search-btn-color;
 			border-width: 2px;
 			color:$white;
+			height:2.5rem;
 			&:focus {
 				border-color:$white;
 			}
@@ -129,6 +131,7 @@ $top-bar-most-margin:0.25rem;
 		width: 50%;
 		padding: 0.6rem;
 		margin:0;
+		height:2.5rem;
 		background-color:$psu-search-btn-color;
 		@include radius(0 0.5rem 0.5rem 0);
 	}

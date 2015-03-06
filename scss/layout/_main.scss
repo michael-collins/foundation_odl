@@ -5,13 +5,53 @@ body.page-node {
 	background-color: #292827;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEyMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYycgd2lkdGg9JzYwJyBoZWlnaHQ9JzEyMCcgeD0nMCcgeT0nMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJCQk8cGF0aCBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nI2ZmZmZmZicgc3Ryb2tlLXdpZHRoPScuMDcnIGQ9J00tMiwxTDcsMTBNLTIsNkw3LDE1TS0yLC00TDcsNScvPgoJCTwvcGF0dGVybj4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYzInIHdpZHRoPSc2MCcgaGVpZ2h0PScxMjAnIHg9JzEwMCUnIHk9JzAnIHZpZXdCb3g9JzAgMCA1IDEwJz4KCQkJPHBhdGggZmlsbC1vcGFjaXR5PScwJyBzdHJva2U9JyNmZmZmZmYnIHN0cm9rZS13aWR0aD0nLjA3JyBkPSdNNywxTC0yLDEwTTcsNkwtMiwxNU03LC00TC0yLDUnLz4KCQk8L3BhdHRlcm4+Cgk8L2RlZnM+Cgk8cmVjdCB3aWR0aD0nNTAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYyknLz4KCTxyZWN0IHg9JzUwJScgd2lkdGg9JzUwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2MyKScvPgo8L3N2Zz4=');
 
 }
+//////////// Layout Mod Tools
+////////////
+.kill-margin {
+	max-width:none;
+	padding:0;
+	margin:0;
+}
+//// Responsive Line Breaks
+.anti-orphan {
+    white-space: nowrap;
+}
+.anti-orphan.long-line {
+    white-space: normal;
+}
+////////////
+////////////
 .l-main {
 	padding:3rem 0;
 }
 .main-body-wrapper {
 	background-color:$white;
 }
-
+//////// Course Listing Page
+.course-grid-list {
+	div.svg-icon {
+		border-radius: 50%;
+		border-color: #ccc;
+		border-style: solid;
+		border-width: 5px;
+		height: 7rem;
+		width: 7rem;
+		margin: 0 auto;
+	}
+	.course-abbrev {
+		a h2 {
+			text-align: center;
+		}
+	}
+	.course-title-reveal {
+		margin-top:1rem;
+		text-align: center;
+	}
+}
+//////// Project Listing Page
+.block-views-design-list-grid-block {
+	
+}
 //////// Blog Posts Listing Page
 .view-blog-posts {
 	.panel {
@@ -134,6 +174,9 @@ body.page-node {
 
 //////// Blog Post Page
 .node-type-blog-post {
+	.main-body-wrapper {
+		border-top: 1rem solid $black;
+	}
 	p {
 		&:last-child {
 			margin-bottom:3rem;
@@ -185,6 +228,7 @@ h2.block-title {
 .block-addtoany {
 	border: 1px #ccc solid;
 	padding: 1rem;
+	margin:0 0 1rem;
 	display: inline-block;
 
 	h2 {

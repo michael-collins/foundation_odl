@@ -203,7 +203,19 @@
       </section>
       <!--/.triptych -->
     <?php endif; ?>
-
+    <!--.full-section-->
+    <?php if (!empty($page['full_section'])): ?>
+     
+      <section class="full-section kill-margin science-blue">
+        <div class="row">
+          <div class="columns">
+            <?php print render($page['full_section']); ?>
+          </div>
+      </div>
+      </section>
+      
+    <?php endif; ?>
+      <!--/.full-section-->
     
 
     

@@ -22,6 +22,13 @@ body.node-type-blog-post {
 		}
 	}
 }
+
+@media only screen and (min-width: 40em) {
+    .anti-orphan.long-line {
+        white-space: nowrap; 
+    }
+}
+//////////// Header Front Page
 .header {
 	h1.title {
 		color: $header-page-title-color;
@@ -59,10 +66,12 @@ body.node-type-blog-post {
 		@media #{$medium-up} {
 			margin-top:5rem;
 			font-size: 4rem;
+			width:50%;
 		}
 		@media #{$large-up} {
 			margin-top:6rem;
 			font-size: 6rem;
+			width:70%;
 		}
 	}
 	h3.call-to-action {
@@ -84,28 +93,6 @@ body.node-type-blog-post {
 		margin: 4rem 0 3rem;
 	}
 }
-
-// Header Background Images
-// Process Page
-// body.section-process
-// .l-header {
-// 	background-color:$process-page-contrast-color;
-
-// 	.odl-lettering a {
-// 		@media #{$medium-up} {
-// 			color:$process-page-contrast-color;
-// 		}
-// 	}
-// }
-// body.front
-// .l-header {
-// 	background-color:$process-page-contrast-color;
-// 	.odl-lettering a {
-// 		@media #{$medium-up} {
-// 			color:$process-page-contrast-color;
-// 		}
-// 	}
-// }
 .call-to-action {
 	margin:3rem 0;
 }
@@ -154,17 +141,7 @@ body.node-type-blog-post {
 		height:100%;
 	}
 }
-.not-front {
-	.header-bg {
-		@media (min-height: 800px) {
-			height: 70%;
-		}
-		@media (min-height: 1000px) {
-			height: 50%;
-		}
-	}
-}
- // Blog Header (It's so annoying)
+ // Blog Header
  .page-blog {
  	background-color:$science-orange;
  }

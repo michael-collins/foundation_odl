@@ -12,7 +12,7 @@
 	// 		margin: 0.25rem 0;
 	// 	}
 	// }
-	@media #{$small-only} {
+	@media #{$small-up} {
 		text-align:center;
 
 		.name.odl-lettering {
@@ -50,6 +50,7 @@
 			color: $white;
 			width: 8rem;
 			margin: 0 0 0 1rem;
+			text-align:left;
 		}
 	}
 }
