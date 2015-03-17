@@ -7,7 +7,7 @@
      <div class="top-bar-most horizontal-menu">
        <div class="row">
         <div class="small-12 medium-8 columns">
-          <li class="pennstate-logo"><a href="http://www.psu.edu"><img alt="psu logo" src="<?php print $GLOBALS['base_url'] . '/' . $GLOBALS['theme_path'];?><?php echo '/images/pennstate/psu-rev-eberly.svg'; ?>"/></a></li>
+          <li class="pennstate-logo"><a href="http://www.psu.edu"><img alt="psu logo" src="<?php print $GLOBALS['base_url'] . '/' . $GLOBALS['theme_path'];?><?php echo '/images/pennstate/psu-rev-eberly-min.svg'; ?>"/></a></li>
 
           <?php if (!empty($page['topbar_section_1'])): ?>
             <?php print render($page['topbar_section_1']); ?>
