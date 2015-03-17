@@ -89,7 +89,17 @@
 	justify-content: center;
 
   }
+.flex-container {
+	display:flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
 
+	&.flex-col {
+		flex-direction: column;
+	}
+}
   // CSS Global Color Selectors
 .science {
 	&-orange {
