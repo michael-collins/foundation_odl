@@ -26,7 +26,7 @@
 %opensans-normal {
 	 font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
 	 font-style: normal;
-	 font-weight: 600;
+	 font-weight: 400;
 }
 %opensans-bold {
 	 font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
@@ -111,4 +111,17 @@ h2.block-title {
 }
 .design-grid-proj-name {
 	text-transform:uppercase;
+}
+.view-recent-blog-posts-block {
+	a {
+		@extend %opensans-normal;
+	}
+}
+.profile-info-reveal {
+	h2 {
+		@extend %oswald-normal;
+	}
+	h3 {
+		@extend %opensans-normal;
+	}
 }

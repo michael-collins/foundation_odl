@@ -1,5 +1,15 @@
 // Non-modular or client styles for .l-header region.
-
+.page-user {
+	.l-header {
+		background-color: lighten($header-bg-pattern-base,10%);
+		.top-bar-most {
+			.row {
+				margin:0;
+				padding:0.25rem 0;
+			}
+		}
+	}
+}
 .not-front.node-type-page {
 	.header {
 		h1#page-title {
@@ -13,7 +23,7 @@ body.node-type-blog-post {
 	.header-bg {
 	background-position: center;
 	//background-size: 100rem;
-	background-color: #292827;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEyMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYycgd2lkdGg9JzYwJyBoZWlnaHQ9JzEyMCcgeD0nMCcgeT0nMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJCQk8cGF0aCBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nI2ZmZmZmZicgc3Ryb2tlLXdpZHRoPScuMDcnIGQ9J00tMiwxTDcsMTBNLTIsNkw3LDE1TS0yLC00TDcsNScvPgoJCTwvcGF0dGVybj4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYzInIHdpZHRoPSc2MCcgaGVpZ2h0PScxMjAnIHg9JzEwMCUnIHk9JzAnIHZpZXdCb3g9JzAgMCA1IDEwJz4KCQkJPHBhdGggZmlsbC1vcGFjaXR5PScwJyBzdHJva2U9JyNmZmZmZmYnIHN0cm9rZS13aWR0aD0nLjA3JyBkPSdNNywxTC0yLDEwTTcsNkwtMiwxNU03LC00TC0yLDUnLz4KCQk8L3BhdHRlcm4+Cgk8L2RlZnM+Cgk8cmVjdCB3aWR0aD0nNTAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYyknLz4KCTxyZWN0IHg9JzUwJScgd2lkdGg9JzUwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2MyKScvPgo8L3N2Zz4=');
+	background-color: $header-bg-pattern-base;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEyMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYycgd2lkdGg9JzYwJyBoZWlnaHQ9JzEyMCcgeD0nMCcgeT0nMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJCQk8cGF0aCBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nI2ZmZmZmZicgc3Ryb2tlLXdpZHRoPScuMDcnIGQ9J00tMiwxTDcsMTBNLTIsNkw3LDE1TS0yLC00TDcsNScvPgoJCTwvcGF0dGVybj4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYzInIHdpZHRoPSc2MCcgaGVpZ2h0PScxMjAnIHg9JzEwMCUnIHk9JzAnIHZpZXdCb3g9JzAgMCA1IDEwJz4KCQkJPHBhdGggZmlsbC1vcGFjaXR5PScwJyBzdHJva2U9JyNmZmZmZmYnIHN0cm9rZS13aWR0aD0nLjA3JyBkPSdNNywxTC0yLDEwTTcsNkwtMiwxNU03LC00TC0yLDUnLz4KCQk8L3BhdHRlcm4+Cgk8L2RlZnM+Cgk8cmVjdCB3aWR0aD0nNTAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYyknLz4KCTxyZWN0IHg9JzUwJScgd2lkdGg9JzUwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2MyKScvPgo8L3N2Zz4=');
 	}
 	h1.title {
 
@@ -59,34 +69,41 @@ body.node-type-blog-post {
 	}
 	h2.call-to-action {
 		color: $white;
+		padding: 0 3rem;
 		@media #{$small-up} {
 			margin-top:2rem;
 			font-size: 2.75rem;
+			text-align: center;
 		}
 		@media #{$medium-up} {
 			margin-top:5rem;
 			font-size: 4rem;
-			width:50%;
+			//width:50%;
+			text-align: left;
 		}
 		@media #{$large-up} {
 			margin-top:6rem;
 			font-size: 6rem;
-			width:70%;
+			
 		}
 	}
 	h3.call-to-action {
 		color: $white;
+		padding: 0 3rem;
 		@media #{$small-up} {
 			margin-top:1rem;
 			font-size: 1rem;
 		}
 		@media #{$medium-up} {
 			margin-top:2rem;
-			font-size: 2rem;
+			font-size: 1.5rem;
+
 		}
 		@media #{$large-up} {
 			margin-top:2.5rem;
 			font-size: 2rem;
+			margin-bottom: 6rem;
+			
 		}
 	}
 	p.call-to-action {
@@ -145,5 +162,10 @@ body.node-type-blog-post {
  .page-blog {
  	background-color:$science-orange;
  }
+ // .section-team {
+ // 	.header-bg {
+	// 	background-color:$header-bg-pattern-base;
+	// }
+ // }
 
 

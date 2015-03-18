@@ -59,6 +59,11 @@
 
 // ODL Top Bar Lettering
 //-----------------------------------------------------------------------------
+p {
+	orphans: 3;
+	widows:3;
+}
+
 .center-middle-flex {
 	display: -webkit-box;
 	display: -moz-box;
@@ -118,4 +123,10 @@
 	&-mustard {
 		background-color:$science-mustard;
 	}
+	&-dark {
+		background-color:lighten($header-bg-pattern-base,5%);
+	}
+ }
+ .text-center-align {
+ 	text-align:center;
  }

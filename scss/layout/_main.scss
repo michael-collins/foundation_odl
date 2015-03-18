@@ -22,10 +22,13 @@ body.page-node {
 ////////////
 ////////////
 .l-main {
-	padding:3rem 0;
+	padding:6rem 0 6rem;
 }
 .main-body-wrapper {
 	background-color:$white;
+}
+hr.sidebar-second , hr.sidebar-first {
+	margin:2rem 1rem 3rem;
 }
 //////// Course Listing Page
 .course-grid-list {

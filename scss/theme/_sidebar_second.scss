@@ -1,0 +1,6 @@
+.sidebar-second.panel {
+	background:transparent;
+	@media #{$small-only} {
+		border:none;
+	}
+}

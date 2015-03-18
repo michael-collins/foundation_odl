@@ -1,4 +1,43 @@
-// // Profiles Styling
+// Profile Page
+.page-user {
+  h2.profile-name {
+    margin-top: 1rem;
+  }
+  h3.profile-job-title {
+      color:$profile-jobtitle-color;
+      margin-bottom: 3rem;
+      font-size: 1.5rem;
+    
+  }
+  .profile-img img {
+    @media #{$small-only} {
+      width:75%;
+    }
+    border-radius:50%;
+    margin-bottom:2rem;
+  }
+  .profile-bio {
+    margin-top:2rem;
+    
+    @media #{$medium-up} {
+      padding:0 5rem;
+      // Medium breakpoint padding fine-tuning
+      @media (min-width:845px) {
+        padding:0 7rem;
+      }
+    }
+
+    @media #{$large-up} {
+      padding:0 5rem;
+      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+      -moz-column-count: 2; /* Firefox */
+      column-count: 2;
+       
+    }
+  }
+}
+
+// Profiles Index list
 
 a.team-member-profile, .team-member-profile {
   padding:0.85rem;
@@ -101,149 +140,8 @@ a.team-member-profile, .team-member-profile {
   }
 }
 
-// // <div class="thumb-obj circle effect effect__spin-slide--r-l">
-// //     <a href="#">     
-// //         <!-- the image (thumbnail) -->
-// //         <div class="img">
-// //             <img src="//placehold.it/300/300" alt="img">
-// //         </div>
-// //         <!-- the thumb info (appears on hover) -->
-// //         <div class="info thumb-obj__info">
-// //           <div class="info-content">
-// //               <h3>Heading here</h3>
-// //               <p>Description goes here</p>
-// //           </div>
-// //         </div>
-// //     </a>
-// // </div>
-
-// @mixin vertical-align {
-//   position: relative;
-//   top: 50%;
-//   @include transform(translateY(-50%));
-// }
-
-// .effect {
-//   @include transition(all .35s ease-in-out);
-// }
-
-// .thumb-obj {
-//   position: relative;
-//   margin: 0 auto;
-//   margin-top: 2em;
-// }
-
-// .thumb-obj a {
-//   color: #333;
-// }
-// .thumb-obj a:hover {
-//   text-decoration: none;
-// }
-// .thumb-obj img {
-//   width: 100%;
-//   height: 100%;
-// }
-
-// .circle {
-//   position: relative;
-//   width: 220px;
-//   height: 220px;
-//   border-radius: 50%;
-  
-//   .img {
-//     img {
-//       border-radius: 50%;
-//     }
-    
-//     &:before {
-//     position: absolute;
-//     display: block;
-//     content: '';
-//     @include transition(all .35s ease-in-out); 
-//     }
-//   }
-  
-//   .thumb-obj__info {
-//     border-radius: 50%;
-//   }
-// }
-
-// .thumb-obj__info {
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   text-align: center;
-//   font-size: 0.7em;
-//   @include transform-style(preserve-3d);
-//   @include backface-visibility(hidden);
-// }
-
-// .effect {
-//   .img {
-//     opacity: 1;
-//     @include transform(scale(1));
-//     @include transition(all .35s ease-in-out);
-//   }
-  
-//   .thumb-obj__info {
-//     position: absolute;
-//     height: 100%;
-//     background: #333333;
-//     background: rgba(0, 0, 0, 0.6);
-//     opacity: 0;
-//     pointer-events: none;
-//     @include transition(all .35s ease-in-out);
-//   }
-// }
-
-// .info-content {
-//   @include vertical-align;
-  
-//   h3 {
-//     margin: 0;
-//     padding: 0;
-//     color: #fff;
-//     text-transform: uppercase;
-//   }
-  
-//   p {
-//     margin-top: .5rem;
-//     padding-top: .5rem;
-//     color: #bbb;
-//     border-top: 1px solid #fff; 
-//   }
-// }
-
-// // animation - left to right
-// .effect__spin-slide--l-r {
-//   .thumb-obj__info {
-//     @include transform(translateX(-100%));
-//   }
-//   a:hover {
-//     .img {
-//       @include transform(rotate(-90deg));
-//     }
-//     .thumb-obj__info {
-//       opacity: 1;
-//       @include transform(translateX(0));
-//     }
-//   }
-// }
-
-// //animation - right to left
-// .effect__spin-slide--r-l {
-//   .thumb-obj__info {
-//     @include transform(translateX(100%));
-//   }
-//   a:hover {
-//     .img {
-//       @include transform(rotate(90deg));
-//     }
-//     .thumb-obj__info {
-//       opacity: 1;
-//       @include transform(translateX(0));
-//     }
-//   }
-// }
+.block-views-profile-page-flex-slider-block {
+  .flexslider .slides img {
+    width:100%;
+  }
+}

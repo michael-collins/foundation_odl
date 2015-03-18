@@ -176,12 +176,14 @@
 
       <?php if (!empty($page['sidebar_first'])): ?>
         <aside role="complementary" class="<?php print $sidebar_first_grid; ?> sidebar-first columns sidebar">
+           <hr class="visible-for-small-only sidebar-first">
           <?php print render($page['sidebar_first']); ?>
         </aside>
       <?php endif; ?>
 
       <?php if (!empty($page['sidebar_second'])): ?>
-        <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns sidebar">
+        <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns sidebar panel">
+          <hr class="visible-for-small-only sidebar-second">
           <?php print render($page['sidebar_second']); ?>
         </aside>
       <?php endif; ?>
@@ -206,7 +208,7 @@
     <!--.full-section-->
     <?php if (!empty($page['full_section'])): ?>
      
-      <section class="full-section kill-margin science-blue">
+      <section class="full-section kill-margin">
         <div class="row">
           <div class="columns">
             <?php print render($page['full_section']); ?>

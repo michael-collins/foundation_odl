@@ -4,6 +4,12 @@
 footer {
 	&.panel {
 		margin:0;
+		background-color:lighten($header-bg-pattern-base,5%);
+		border:none;
+		
+		p {
+			color:$white;
+		}
 	}
 }
 .office-address {

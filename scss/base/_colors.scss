@@ -13,6 +13,7 @@ $odl-lettering-text-color:$top-bar-primary-contrast-color;
 
 // Header
 $header-page-title-color:#fff;
+$header-bg-pattern-base:#292827;
 $science-orange:#E2801E;
 $science-green:#BED01D;
 $science-blue:#1EBDE2;
@@ -25,3 +26,6 @@ $blocks-heading-color:#777;
 //PSU Search Form
 $psu-search-btn-color:rgba(0,0,0,0.2);
 $psu-search-radios-bg-color:rgba(50,50,50,0.9);
+
+//Profile Page
+$profile-jobtitle-color:lighten($top-bar-primary-contrast-color,40%);
