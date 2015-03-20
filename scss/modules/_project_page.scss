@@ -1,0 +1,29 @@
+.embedded-video {
+	margin: 0 auto;
+	text-align: center;
+}
+.section-projects {
+	.post-copy {
+		margin-top:2rem;
+		margin-bottom:2rem;
+		
+		@media #{$medium-up} {
+	      padding:0 5rem;
+	      // Medium breakpoint padding fine-tuning
+	      @media (min-width:845px) {
+	        padding:0 7rem;
+	      }
+	    }
+
+		@media #{$large-up} {
+	      padding:0;
+	      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+	      -moz-column-count: 2; /* Firefox */
+	      column-count: 2;  
+	    }
+
+	}
+}
+.project-images-flexslider {
+	margin-top:2rem;
+}

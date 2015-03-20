@@ -1,5 +1,5 @@
 // Non-modular or client styles for .l-header region.
-.page-user {
+.page-user, .page-search {
 	.l-header {
 		background-color: lighten($header-bg-pattern-base,10%);
 		.top-bar-most {

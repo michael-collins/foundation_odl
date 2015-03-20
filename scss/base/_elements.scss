@@ -111,20 +111,39 @@ p {
 .science {
 	&-orange {
 		background-color:$science-orange;
+
+		&-border {
+			border:4px solid $science-orange;
+		}
 	}
 
  	&-green {
 		background-color:$science-green;
+
+		&-border {
+			border:4px solid $science-green;
+		}
 	}
  	
  	&-blue {
 		background-color:$science-blue;
+
+		&-border {
+			border:4px solid $science-blue;
+		}
 	}
 	&-mustard {
 		background-color:$science-mustard;
+
+		&-border {
+			border:4px solid $science-mustard;
+		}
 	}
 	&-dark {
 		background-color:lighten($header-bg-pattern-base,5%);
+		&-border {
+			border:4px solid lighten($header-bg-pattern-base,5%);
+		}
 	}
  }
  .text-center-align {

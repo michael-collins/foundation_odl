@@ -1,2 +1,14 @@
-.view-id-design_list_grid {
+.view-project-list-page {
+	.panel {
+		width:100%;
+		float:left;
+		border:none;
+		border-right: 4px solid $science-green;
+		padding:0;
+		text-align: left;
+	}
+
+	h2 {
+		margin: 1rem 1rem 1rem 0;
+	}
 }

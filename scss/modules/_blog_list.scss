@@ -1,0 +1,100 @@
+//////// Blog Posts Listing Page
+.view-blog-posts {
+	.panel {
+		padding: 0 0 1rem 0;
+		border: none;
+		border-right: 4px solid $science-mustard;
+		
+		.read-more {
+			margin-top: 0.2rem;
+			@media #{$small-only} {
+				margin-left:1rem;	
+			}
+		}
+		
+		h2 {
+			margin: 1rem 1rem 1rem 0;
+		}
+
+		@media #{$medium-up} {
+			text-align:center;
+			padding: 0 0 0 0;
+		}
+
+		@media #{$medium-up} {
+			float:left;
+			width:100%;
+			text-align:left;
+		}
+	}
+	p {
+		margin:2rem 0;
+
+		@media #{$medium-up} {
+			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		    -moz-column-count: 2; /* Firefox */
+		    column-count: 2;
+		}
+	}
+}
+.blog-list {
+	
+	&-thumb-img {
+		@media #{$small-only} {
+			width:100%;	
+		}
+
+		@media #{$medium-up} {
+			float:left;
+			margin-right:1rem;
+			height:auto;
+			overflow: hidden;
+			width: 10rem;
+			
+			img {
+				width: 20rem;
+				position: relative;
+				left: 0;
+				max-width: 800%;
+				left: -50%;
+			}
+		}
+	}
+	&-title {
+		
+		@media #{$small-only} {
+			margin-left:1rem;	
+		}
+		
+		@media #{$medium-up} {
+			// float:left;
+		}
+
+	}
+	&-postdate {
+		
+		@media #{$small-only} {
+			margin-left:1rem;	
+		}
+		
+		@media #{$medium-up} {
+			// float:left;
+		}
+	}
+	&-proj-auth {
+		
+		@media #{$small-only} {
+			margin-left:1rem;	
+		}
+		
+		@media #{$medium-up} {
+			// float:left;
+		}
+	}
+	&-tags {
+		
+		@media #{$medium-up} {
+			float:left;
+		}
+	}
+}
