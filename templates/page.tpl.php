@@ -182,7 +182,7 @@
       <?php endif; ?>
 
       <?php if (!empty($page['sidebar_second'])): ?>
-        <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns sidebar panel">
+        <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns sidebar">
           <hr class="visible-for-small-only sidebar-second">
           <?php print render($page['sidebar_second']); ?>
         </aside>

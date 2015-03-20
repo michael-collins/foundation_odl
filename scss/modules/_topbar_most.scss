@@ -1,12 +1,12 @@
 //Settings for .top-bar-most
 $top-bar-most-height:4.5rem; // Change this variable to change the height of the header
-$top-bar-most-margin:0.25rem;
+$top-bar-most-padding:0.25rem;
 
 .top-bar-most {	
 	.row {
 		max-width:none;
 		// height: $top-bar-most-height;
-		margin: $top-bar-most-margin 0;
+		padding: $top-bar-most-padding 0;
 
 		div {
 			height:inherit;

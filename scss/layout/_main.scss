@@ -1,9 +1,12 @@
 // Non-modular or client styles for the .l-content region.
-body.page-node {
-	background-position: center;
-	//background-size: 100rem;
-	background-color: #292827;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEyMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYycgd2lkdGg9JzYwJyBoZWlnaHQ9JzEyMCcgeD0nMCcgeT0nMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJCQk8cGF0aCBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nI2ZmZmZmZicgc3Ryb2tlLXdpZHRoPScuMDcnIGQ9J00tMiwxTDcsMTBNLTIsNkw3LDE1TS0yLC00TDcsNScvPgoJCTwvcGF0dGVybj4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYzInIHdpZHRoPSc2MCcgaGVpZ2h0PScxMjAnIHg9JzEwMCUnIHk9JzAnIHZpZXdCb3g9JzAgMCA1IDEwJz4KCQkJPHBhdGggZmlsbC1vcGFjaXR5PScwJyBzdHJva2U9JyNmZmZmZmYnIHN0cm9rZS13aWR0aD0nLjA3JyBkPSdNNywxTC0yLDEwTTcsNkwtMiwxNU03LC00TC0yLDUnLz4KCQk8L3BhdHRlcm4+Cgk8L2RlZnM+Cgk8cmVjdCB3aWR0aD0nNTAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYyknLz4KCTxyZWN0IHg9JzUwJScgd2lkdGg9JzUwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2MyKScvPgo8L3N2Zz4=');
+// body.page-node {
+// 	background-position: center;
+// 	//background-size: 100rem;
+// 	//background-color: #292827;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEyMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYycgd2lkdGg9JzYwJyBoZWlnaHQ9JzEyMCcgeD0nMCcgeT0nMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJCQk8cGF0aCBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nI2ZmZmZmZicgc3Ryb2tlLXdpZHRoPScuMDcnIGQ9J00tMiwxTDcsMTBNLTIsNkw3LDE1TS0yLC00TDcsNScvPgoJCTwvcGF0dGVybj4KCQk8cGF0dGVybiBwYXR0ZXJuVW5pdHM9J3VzZXJTcGFjZU9uVXNlJyBpZD0nYzInIHdpZHRoPSc2MCcgaGVpZ2h0PScxMjAnIHg9JzEwMCUnIHk9JzAnIHZpZXdCb3g9JzAgMCA1IDEwJz4KCQkJPHBhdGggZmlsbC1vcGFjaXR5PScwJyBzdHJva2U9JyNmZmZmZmYnIHN0cm9rZS13aWR0aD0nLjA3JyBkPSdNNywxTC0yLDEwTTcsNkwtMiwxNU03LC00TC0yLDUnLz4KCQk8L3BhdHRlcm4+Cgk8L2RlZnM+Cgk8cmVjdCB3aWR0aD0nNTAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYyknLz4KCTxyZWN0IHg9JzUwJScgd2lkdGg9JzUwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2MyKScvPgo8L3N2Zz4=');
 
+// }
+body.page-node, body.not-front {
+	background-color:$science-dark;
 }
 //////////// Layout Mod Tools
 ////////////
@@ -22,7 +25,15 @@ body.page-node {
 ////////////
 ////////////
 .l-main {
-	padding:6rem 0 6rem;
+	@media #{$small-up} {
+		padding:3rem 0 6rem;
+	}
+	@media #{$medium-up} {
+		padding:3rem 0 6rem;
+	}
+	@media #{$large-up} {
+		padding:3rem 0 6rem;
+	}
 }
 .main-body-wrapper {
 	background-color:$white;
@@ -125,7 +136,7 @@ h2.block-title {
 }
 //////// Add to Any heading not hidden
 .block-addtoany {
-	border: 1px #ccc solid;
+	//border: 1px #ccc solid;
 	padding: 1rem;
 	margin:0 0 1rem;
 	display: inline-block;

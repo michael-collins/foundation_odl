@@ -140,9 +140,9 @@ p {
 		}
 	}
 	&-dark {
-		background-color:lighten($header-bg-pattern-base,5%);
+		background-color:$science-dark;
 		&-border {
-			border:4px solid lighten($header-bg-pattern-base,5%);
+			border:4px solid $science-dark;
 		}
 	}
  }

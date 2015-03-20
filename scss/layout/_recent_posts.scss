@@ -10,3 +10,34 @@
 		border:2px #eee solid;
 	}
 }
+
+.section-blog {
+	.sidebar-second {
+		@media #{$small-up} {
+			border-left:none;
+		}
+		@media #{$medium-up} {
+			border-left:4px solid $science-mustard;
+		}
+	}
+}
+.section-blog.node-type-blog-post {
+	.sidebar-second {
+		@media #{$small-up} {
+			border-left:none;
+		}
+		@media #{$medium-up} {
+			border-left:4px solid $science-dark;
+		}
+	}
+}
+.front {
+	.sidebar-second {
+		@media #{$small-up} {
+			border-left:none;
+		}
+		@media #{$medium-up} {
+			border-left:4px solid $science-orange;
+		}
+	}
+}

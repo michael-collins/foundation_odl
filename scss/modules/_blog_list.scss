@@ -3,11 +3,16 @@
 	.panel {
 		padding: 0 0 1rem 0;
 		border: none;
-		border-right: 4px solid $science-mustard;
+		background-color: transparent;
 		
+		&:nth-child(n+2) {
+			border-top: 1px solid #ccc;
+			padding: 1rem 0 0 0;
+		}
+
 		.read-more {
 			margin-top: 0.2rem;
-			@media #{$small-only} {
+			@media #{$medium-up} {
 				margin-left:1rem;	
 			}
 		}
@@ -37,6 +42,7 @@
 		}
 	}
 }
+
 .blog-list {
 	
 	&-thumb-img {
@@ -62,33 +68,21 @@
 	}
 	&-title {
 		
-		@media #{$small-only} {
-			margin-left:1rem;	
-		}
-		
 		@media #{$medium-up} {
-			// float:left;
+			margin-left:1rem;
 		}
 
 	}
 	&-postdate {
 		
-		@media #{$small-only} {
-			margin-left:1rem;	
-		}
-		
 		@media #{$medium-up} {
-			// float:left;
+			margin-left:1rem;
 		}
 	}
 	&-proj-auth {
 		
-		@media #{$small-only} {
-			margin-left:1rem;	
-		}
-		
 		@media #{$medium-up} {
-			// float:left;
+			margin-left:1rem;	
 		}
 	}
 	&-tags {
