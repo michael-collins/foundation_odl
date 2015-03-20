@@ -10,7 +10,26 @@
 		border:2px #eee solid;
 	}
 }
+.view-recent-blog-posts-block {
+	.recent-posts-link {
+		a {
+			margin:0;
+			padding: 0.5rem 0;
+			//border-top:1px solid $science-mustard;
+		}
 
+		&:first-child {
+			a {
+				//border-top:none;
+			}
+		}
+	}
+}
+.recent-posts-img-link {
+	a {
+		margin: 0rem 0rem 1rem;
+	}
+}
 .section-blog {
 	.sidebar-second {
 		@media #{$small-up} {

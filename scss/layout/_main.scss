@@ -41,6 +41,14 @@ body.page-node, body.not-front {
 hr.sidebar-second , hr.sidebar-first {
 	margin:2rem 1rem 3rem;
 }
+.front {
+	h1 {
+		color:$science-orange;
+	}
+	h2 {
+		color:$science-orange;
+	}
+}
 //////// Course Listing Page
 .course-grid-list {
 	div.svg-icon {

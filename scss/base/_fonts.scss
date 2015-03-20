@@ -102,9 +102,11 @@ h3.site-slogan {
 		text-transform:uppercase;
 	}
 }
-
-h2.block-title {
+.l-main h2 {
 	text-transform:uppercase;
+}
+h2.block-title {
+	text-transform:none;
 }
 #edit-textfield {
 	@extend %opensans-light;
