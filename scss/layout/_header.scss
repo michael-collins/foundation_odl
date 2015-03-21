@@ -42,6 +42,10 @@ body.node-type-blog-post {
     }
 }
 //////////// Header Front Page
+.front .l-header {
+	background-color:rgba(226,128,30,0.6);
+
+}
 .header {
 	h1.title {
 		color: $header-page-title-color;
@@ -76,17 +80,20 @@ body.node-type-blog-post {
 		@media #{$small-up} {
 			margin-top:2rem;
 			font-size: 2.75rem;
+			line-height: 3rem;
 			
 		}
 		@media #{$medium-up} {
 			margin-top:5rem;
 			font-size: 4rem;
+			line-height: 4rem;
 			
 			
 		}
 		@media #{$large-up} {
 			margin-top:6rem;
 			font-size: 6rem;
+			line-height: 6rem;
 			
 		}
 	}

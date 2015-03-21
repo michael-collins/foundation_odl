@@ -107,6 +107,9 @@ p {
 		-webkit-flex-direction: column;
 	}
 }
+.vignette {
+	@include vignette;
+}
   // CSS Global Color Selectors
 .science {
 	&-orange {

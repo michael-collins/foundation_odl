@@ -8,6 +8,7 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-drush": "*",
     "grunt-grunticon": "^2.1.2",
+    "grunt-responsive-videos": "^0.1.2",
     "grunt-sass": "~0.17.0",
     "grunt-svgmin": "^2.0.0",
     "load-grunt-tasks": "~0.6.0",

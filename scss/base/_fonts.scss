@@ -108,6 +108,9 @@ h3.site-slogan {
 h2.block-title {
 	text-transform:none;
 }
+h2.call-to-action {
+	@extend %oswald-normal;
+}
 #edit-textfield {
 	@extend %opensans-light;
 }
