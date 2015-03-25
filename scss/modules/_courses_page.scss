@@ -1,0 +1,37 @@
+.section-courses {
+
+	.courses-page-view-wrapper {
+		margin-top:2rem;
+		margin-bottom:2rem;
+		
+		@media #{$medium-up} {
+	      padding:0 5rem;
+	      // Medium breakpoint padding fine-tuning
+	      @media (min-width:845px) {
+	        padding:0 7rem;
+	      }
+	    }
+
+	    .svg-icon {
+			text-align:center;
+			img {
+				width:50%;
+				@include opacity(0.1);	
+			}
+		}
+
+	}
+	.video-player {
+		margin-top:2rem !important;
+	}
+	.post-copy {
+
+		@media #{$large-up} {
+	      padding:0;
+	      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+	      -moz-column-count: 2; /* Firefox */
+	      column-count: 2;  
+	    }
+
+	}
+}

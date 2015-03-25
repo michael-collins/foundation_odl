@@ -170,6 +170,16 @@ body.node-type-blog-post {
 		height:100%;
 	}
 }
+.node-type-design.section-projects {
+	.header-bg {
+		background-color:$science-green;
+	}
+}
+.node-type-course.section-courses {
+	.header-bg {
+		background-color:$science-blue;
+	}
+}
  // Blog Header
  .page-blog {
  	background-color:$science-orange;
