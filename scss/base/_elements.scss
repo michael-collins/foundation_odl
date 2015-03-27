@@ -152,3 +152,10 @@ p {
  .text-center-align {
  	text-align:center;
  }
+.read-more {
+	margin-top: 0.2rem;
+	margin-bottom: 1rem !important;
+	@media #{$medium-up} {
+		margin-left:1rem;	
+	}
+}

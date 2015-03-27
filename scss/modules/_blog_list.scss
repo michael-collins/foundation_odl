@@ -9,13 +9,6 @@
 			border-top: 1px solid #ccc;
 			padding: 1rem 0 0 0;
 		}
-
-		.read-more {
-			margin-top: 0.2rem;
-			@media #{$medium-up} {
-				margin-left:1rem;	
-			}
-		}
 		
 		// h2 {
 		// 	margin: 1rem 1rem 1rem 0;
@@ -44,7 +37,7 @@
 }
 
 .blog-list {
-	
+
 	&-thumb-img {
 		@media #{$small-only} {
 			width:100%;	
