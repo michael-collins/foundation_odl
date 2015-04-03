@@ -65,7 +65,11 @@ body.node-type-blog-post {
 			font-size: 4rem;
 			text-align: left;
 			line-height: 3.25rem;
-			width: 70%;
+			// width: 70%;
+
+			&.blog-category {
+				text-align: center;
+			}
 		}
 		@media #{$large-up} {
 			margin-top:7rem;

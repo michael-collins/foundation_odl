@@ -100,10 +100,6 @@ hr.sidebar-second , hr.sidebar-first {
 			margin-bottom:3rem;
 		}
 
-		@media #{$small-only} {
-			text-align: justify;	
-		}
-
 	}
 	.post-date {
 		font-size:1.5rem;
